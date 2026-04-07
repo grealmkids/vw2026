@@ -13,13 +13,13 @@
   object-fit: contain; /* Ensure image fits without losing aspect ratio */
 }
 .card-text {
-  top: 19.5%;
+  top: 38.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 17.5px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: rgb(80, 255, 199);
+  color: rgb(0, 143, 112);
   text-align: center;
   width: 100%;
   box-sizing: border-box;
