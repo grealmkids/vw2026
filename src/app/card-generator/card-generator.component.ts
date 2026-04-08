@@ -15,8 +15,11 @@ export class CardGeneratorComponent {
 
   // Function to sanitize the guest name to avoid invalid filename characters
   sanitizeFileName(name: string): string {
-    return name.replace(/[^a-z0-9]/gi, '_').toUpperCase();
+    return name.replace(/\b\w/g, char => char.toUpperCase());
   }
+  formatName(name: string): string {
+  return name.replace(/\b\w/g, c => c.toUpperCase());
+}
 
   downloadAsPDF() {
     const cardElement = document.getElementById('card') as HTMLElement;

@@ -8,8 +8,8 @@
         <input
           type="text"
           [(ngModel)]="guestName"
-          placeholder="Type here Guest's Name (Max. 30 Characters)"
-          maxlength="30"
+          placeholder="Type here Guest's Name (Max. 28 Characters)"
+          maxlength="28"
           class="form-control text-center border-3 border-transparent"
         />
 
@@ -20,7 +20,7 @@
             class="card-background img-fluid"
           />
           <div class="card-text position-absolute">
-            {{ guestName.toUpperCase() }}
+            {{ formatName(guestName) }}
           </div>
         </div>
 
